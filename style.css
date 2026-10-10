@@ -5,7 +5,8 @@ html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
 a{color:var(--accent)}
 .site-header{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;padding:1rem 1.25rem;background:var(--bg);border-bottom:1px solid var(--line)}
-.logo{font-weight:700;letter-spacing:.04em;text-decoration:none;color:var(--fg)}
+.logo{font-weight:700;letter-spacing:.04em;text-decoration:none;color:var(--fg);line-height:1.2}
+.logo span{display:block;font-weight:400;font-size:.8rem;color:var(--muted);letter-spacing:0}
 nav{display:flex;gap:1.25rem;flex-wrap:wrap}
 nav a{text-decoration:none;color:var(--muted)}
 nav a:hover{color:var(--accent)}
@@ -30,3 +31,10 @@ figcaption{margin-top:.5rem;color:var(--muted);font-size:.95rem}
 .contact ul{list-style:none;padding:0}
 .contact li{margin:.4rem 0}
 .site-footer{text-align:center;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);padding:2rem 1.25rem}
+
+.hero{display:grid;gap:2rem;grid-template-columns:1fr;align-items:center}
+@media(min-width:800px){.hero{grid-template-columns:1.3fr 1fr}}
+.hero-img{width:100%;max-width:420px;justify-self:center;border-radius:12px;mix-blend-mode:multiply}
+@media(prefers-color-scheme:dark){.hero-img{mix-blend-mode:normal}}
+.about{max-width:42rem;color:var(--muted)}
+.card-img{width:100%;max-width:760px;border-radius:12px;border:1px solid var(--line);margin-top:1rem}
