@@ -1,0 +1,32 @@
+:root{--bg:#faf8f5;--fg:#1d1b19;--muted:#6b665f;--accent:#b4562f;--card:#fff;--line:#e7e2da}
+@media (prefers-color-scheme:dark){:root{--bg:#161412;--fg:#f2eee8;--muted:#a39d94;--accent:#e08a5f;--card:#1f1c19;--line:#322e29}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--accent)}
+.site-header{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;padding:1rem 1.25rem;background:var(--bg);border-bottom:1px solid var(--line)}
+.logo{font-weight:700;letter-spacing:.04em;text-decoration:none;color:var(--fg)}
+nav{display:flex;gap:1.25rem;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--accent)}
+.hero,.section,.site-footer{max-width:1040px;margin:0 auto;padding:4rem 1.25rem}
+.hero{padding-top:6rem;padding-bottom:5rem}
+.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.8rem;color:var(--accent);margin:0 0 1rem}
+h1{font-size:clamp(2.2rem,6vw,4rem);line-height:1.1;margin:0 0 1rem}
+h2{font-size:clamp(1.6rem,4vw,2.2rem);margin:0 0 1.5rem}
+.lead{font-size:1.2rem;color:var(--muted);max-width:42rem}
+.btn{display:inline-block;margin-top:1.5rem;padding:.8rem 1.6rem;background:var(--accent);color:#fff;border-radius:999px;text-decoration:none;font-weight:600}
+.two-col{display:grid;gap:2rem;grid-template-columns:1fr}
+@media(min-width:760px){.two-col{grid-template-columns:1.2fr 1fr;align-items:center}}
+.photo img,.ph{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px}
+.ph{display:grid;place-items:center;background:var(--card);border:1px dashed var(--line);color:var(--muted)}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+figure{margin:0}
+figure img,figure .ph{aspect-ratio:1;width:100%;object-fit:cover;border-radius:10px}
+figcaption{margin-top:.5rem;color:var(--muted);font-size:.95rem}
+.cards{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.cards article{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1.5rem}
+.cards h3{margin:0 0 .5rem}
+.contact ul{list-style:none;padding:0}
+.contact li{margin:.4rem 0}
+.site-footer{text-align:center;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);padding:2rem 1.25rem}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[IMIĘ I NAZWISKO] – Projektant</title>
+  <meta name="description" content="[KRÓTKI OPIS: kim jest projektant i czym się zajmuje]">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top">[NAZWA / MARKA]</a>
+    <nav>
+      <a href="#o-mnie">O mnie</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#oferta">Oferta</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">[SPECJALIZACJA, np. projektant grafiki / wnętrz / mody]</p>
+      <h1>[HASŁO PRZEWODNIE PROJEKTANTA]</h1>
+      <p class="lead">[1–2 zdania o tym, co projektant robi i dla kogo.]</p>
+      <a class="btn" href="#kontakt">Skontaktuj się</a>
+    </section>
+
+    <section id="o-mnie" class="section two-col">
+      <div>
+        <h2>O mnie</h2>
+        <p>[TEKST „O MNIE” – historia, doświadczenie, podejście do projektowania.]</p>
+      </div>
+      <div class="photo">
+        <img src="images/portret.jpg" alt="[Imię i nazwisko]" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Zdjęcie'}))">
+      </div>
+    </section>
+
+    <section id="portfolio" class="section">
+      <h2>Portfolio</h2>
+      <div class="grid">
+        <figure><img src="images/praca-1.jpg" alt="Projekt 1" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Projekt 1'}))"><figcaption>[Tytuł projektu 1]</figcaption></figure>
+        <figure><img src="images/praca-2.jpg" alt="Projekt 2" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Projekt 2'}))"><figcaption>[Tytuł projektu 2]</figcaption></figure>
+        <figure><img src="images/praca-3.jpg" alt="Projekt 3" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Projekt 3'}))"><figcaption>[Tytuł projektu 3]</figcaption></figure>
+        <figure><img src="images/praca-4.jpg" alt="Projekt 4" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Projekt 4'}))"><figcaption>[Tytuł projektu 4]</figcaption></figure>
+        <figure><img src="images/praca-5.jpg" alt="Projekt 5" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Projekt 5'}))"><figcaption>[Tytuł projektu 5]</figcaption></figure>
+        <figure><img src="images/praca-6.jpg" alt="Projekt 6" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'Projekt 6'}))"><figcaption>[Tytuł projektu 6]</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="oferta" class="section">
+      <h2>Oferta</h2>
+      <div class="cards">
+        <article><h3>[Usługa 1]</h3><p>[Krótki opis usługi.]</p></article>
+        <article><h3>[Usługa 2]</h3><p>[Krótki opis usługi.]</p></article>
+        <article><h3>[Usługa 3]</h3><p>[Krótki opis usługi.]</p></article>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section contact">
+      <h2>Kontakt</h2>
+      <p>Masz pomysł na projekt? Napisz lub zadzwoń.</p>
+      <ul>
+        <li>E-mail: <a href="mailto:kontakt@example.com">[ADRES E-MAIL]</a></li>
+        <li>Telefon: <a href="tel:+48000000000">[NUMER TELEFONU]</a></li>
+        <li>Lokalizacja: [MIASTO]</li>
+        <li><a href="https://www.facebook.com/profile.php?id=61594917465250" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">© <span id="y"></span> [NAZWA / MARKA]. Wszelkie prawa zastrzeżone.</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
